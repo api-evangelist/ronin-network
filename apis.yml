@@ -1,0 +1,219 @@
+aid: ronin-network
+url: https://raw.githubusercontent.com/api-evangelist/ronin-network/refs/heads/main/apis.yml
+name: Ronin Network
+kind: company
+description: >-
+  Ronin is an Ethereum sidechain originally built by Sky Mavis to power Axie
+  Infinity and a wider game and NFT economy. The network exposes a standard
+  Ethereum-style JSON-RPC interface on mainnet and the Saigon testnet, the
+  Ronin Explorer, a canonical bridge to Ethereum, and the Skynet Web3 data
+  API for indexed accounts, NFTs, contracts, and transactions. Sky Mavis layers
+  on game and platform APIs (Axie Infinity Origins, AXP, Ronin Market Partner,
+  Ronin Store, Account, Wallet, Gas Sponsoring, Katana Swap) administered
+  through the Ronin Developer Console.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Sidechain
+  - Ethereum
+  - Gaming
+  - NFT
+  - Axie Infinity
+  - JSON-RPC
+  - Crypto
+  - Web3
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: ronin-network:json-rpc-mainnet
+    name: Ronin JSON-RPC (Mainnet)
+    description: >-
+      Standard Ethereum-style JSON-RPC endpoint for Ronin mainnet (chain ID
+      2020). Used by wallets, games, dApps, indexers, and tooling to read
+      chain state and submit transactions on Ronin.
+    humanURL: https://docs.roninchain.com/
+    baseURL: https://api.roninchain.com/rpc
+    tags:
+      - JSON-RPC
+      - Mainnet
+      - EVM
+    properties:
+      - type: Documentation
+        url: https://docs.roninchain.com/
+  - aid: ronin-network:json-rpc-saigon
+    name: Ronin JSON-RPC (Saigon Testnet)
+    description: >-
+      JSON-RPC endpoint for the Saigon testnet (chain ID 2021), used for
+      development, integration testing, and dApp dry runs before mainnet.
+    humanURL: https://docs.roninchain.com/
+    baseURL: https://saigon-testnet.roninchain.com/rpc
+    tags:
+      - JSON-RPC
+      - Testnet
+      - Saigon
+    properties:
+      - type: Documentation
+        url: https://docs.roninchain.com/
+  - aid: ronin-network:explorer
+    name: Ronin Explorer
+    description: >-
+      Web explorer for the Ronin chain - blocks, transactions, addresses,
+      tokens, validators, and contract verification. Used by users and
+      analytics tools to inspect chain activity.
+    humanURL: https://app.roninchain.com/
+    baseURL: https://app.roninchain.com/
+    tags:
+      - Explorer
+      - Web
+    properties:
+      - type: Website
+        url: https://app.roninchain.com/
+  - aid: ronin-network:bridge
+    name: Ronin Bridge
+    description: >-
+      Canonical bridge between Ethereum mainnet and Ronin for ETH, AXS, SLP,
+      and supported ERC-20 / ERC-721 assets. Operated by Sky Mavis with
+      validator-controlled gateway contracts on both chains.
+    humanURL: https://bridge.roninchain.com/
+    baseURL: https://bridge.roninchain.com/
+    tags:
+      - Bridge
+      - L1
+      - Sidechain
+    properties:
+      - type: Website
+        url: https://bridge.roninchain.com/
+  - aid: ronin-network:skynet-web3-api
+    name: Skynet Web3 API
+    description: >-
+      Sky Mavis indexed Web3 API for querying accounts, NFTs, blocks,
+      collections, contracts, and transactions on Ronin. Higher-level than raw
+      JSON-RPC; used by wallets, marketplaces, and dashboards. Access via the
+      Ronin Developer Console after project approval.
+    humanURL: https://docs.skymavis.com/
+    baseURL: https://api-gateway.skymavis.com
+    tags:
+      - REST
+      - Indexer
+      - Web3
+      - Sky Mavis
+    properties:
+      - type: Documentation
+        url: https://docs.skymavis.com/
+  - aid: ronin-network:axie-origins-api
+    name: Axie Infinity Origins API
+    description: >-
+      Game API for Axie Infinity Origins - items, leaderboards, battle logs,
+      seasons, and other game-state data. Issued via the Ronin Developer
+      Console to approved partners.
+    humanURL: https://docs.skymavis.com/
+    baseURL: https://api-gateway.skymavis.com
+    tags:
+      - Game API
+      - Axie Infinity
+      - Sky Mavis
+    properties:
+      - type: Documentation
+        url: https://docs.skymavis.com/
+  - aid: ronin-network:axp-api
+    name: AXP API
+    description: >-
+      Sky Mavis API for managing Axie Experience Points (AXP) - issuing AXP
+      to user wallets, retrieving balances, and integrating game progression
+      with on-chain rewards.
+    humanURL: https://docs.skymavis.com/
+    baseURL: https://api-gateway.skymavis.com
+    tags:
+      - Game API
+      - AXP
+      - Rewards
+    properties:
+      - type: Documentation
+        url: https://docs.skymavis.com/
+  - aid: ronin-network:ronin-market-partner-api
+    name: Ronin Market Partner API
+    description: >-
+      Partner API for NFT creators on Ronin Market - notably an NFT metadata
+      refresh endpoint that lets approved collections force Ronin Market to
+      re-fetch token metadata after updates.
+    humanURL: https://docs.skymavis.com/
+    baseURL: https://api-gateway.skymavis.com
+    tags:
+      - NFT
+      - Marketplace
+      - Partners
+    properties:
+      - type: Documentation
+        url: https://docs.skymavis.com/
+  - aid: ronin-network:ronin-store-api
+    name: Ronin Store API
+    description: >-
+      Server-side API for Ronin Store partners - user verification and item
+      delivery flows for fiat or on-chain purchases of in-game items.
+    humanURL: https://docs.skymavis.com/
+    baseURL: https://api-gateway.skymavis.com
+    tags:
+      - Commerce
+      - Items
+      - Server-Side
+    properties:
+      - type: Documentation
+        url: https://docs.skymavis.com/
+  - aid: ronin-network:injected-provider
+    name: Ronin Injected Provider API
+    description: >-
+      Browser JavaScript injected provider exposed by Ronin Wallet - lets
+      dApps detect the wallet, request accounts, sign messages, and submit
+      transactions, mirroring the EIP-1193 provider shape.
+    humanURL: https://docs.skymavis.com/
+    baseURL: https://docs.skymavis.com/
+    tags:
+      - Wallet
+      - Provider
+      - JavaScript
+    properties:
+      - type: Documentation
+        url: https://docs.skymavis.com/
+  - aid: ronin-network:developer-console
+    name: Ronin Developer Console
+    description: >-
+      Developer portal for managing Sky Mavis API access - request API keys,
+      manage projects, enable services (Account, Wallet, Gas Sponsoring, Fiat
+      onramp, Katana Swap, App Tracking), and list NFT collections on Ronin
+      Market.
+    humanURL: https://developers.roninchain.com/
+    baseURL: https://developers.roninchain.com/
+    tags:
+      - Developer Portal
+      - Console
+      - API Keys
+    properties:
+      - type: Website
+        url: https://developers.roninchain.com/
+common:
+  - type: Website
+    url: https://roninchain.com/
+  - type: Documentation
+    url: https://docs.roninchain.com/
+  - type: Documentation
+    url: https://docs.skymavis.com/
+  - type: DeveloperConsole
+    url: https://developers.roninchain.com/
+  - type: Explorer
+    url: https://app.roninchain.com/
+  - type: Bridge
+    url: https://bridge.roninchain.com/
+  - type: GitHub
+    url: https://github.com/axieinfinity
+  - type: X
+    url: https://x.com/Ronin_Network
+integrations:
+  - name: Sky Mavis
+  - name: Axie Infinity
+  - name: Chainlink CCIP
+  - name: Chainlink VRF
+  - name: The Graph
+  - name: Delegate.xyz
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
