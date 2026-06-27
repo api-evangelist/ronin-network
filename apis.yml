@@ -197,7 +197,7 @@ common:
     url: https://docs.roninchain.com/
   - type: Documentation
     url: https://docs.skymavis.com/
-  - type: DeveloperConsole
+  - type: Console
     url: https://developers.roninchain.com/
   - type: Explorer
     url: https://app.roninchain.com/
