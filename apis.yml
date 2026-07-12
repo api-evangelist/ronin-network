@@ -191,6 +191,10 @@ apis:
       - type: Website
         url: https://developers.roninchain.com/
 common:
+  - type: DomainSecurity
+    url: security/ronin-network-domain-security.yml
+  - url: https://blog.roninchain.com/feed
+    type: Blog
   - type: Website
     url: https://roninchain.com/
   - type: Documentation
