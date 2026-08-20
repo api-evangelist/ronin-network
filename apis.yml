@@ -166,6 +166,10 @@ apis:
     baseURL: https://api-gateway.skymavis.com
     tags:
       - Commerce
+      - Item
+      - Server-Side
+    tags_raw:
+      - Commerce
       - Items
       - Server-Side
     properties:
@@ -180,6 +184,10 @@ apis:
     humanURL: https://docs.skymavis.com/
     baseURL: https://docs.skymavis.com/
     tags:
+      - Wallets
+      - Provider
+      - JavaScript
+    tags_raw:
       - Wallet
       - Provider
       - JavaScript
@@ -196,6 +204,10 @@ apis:
     humanURL: https://developers.roninchain.com/
     baseURL: https://developers.roninchain.com/
     tags:
+      - Developer Portal
+      - Console
+      - APIKeys
+    tags_raw:
       - Developer Portal
       - Console
       - API Keys
