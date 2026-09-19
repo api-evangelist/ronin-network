@@ -196,7 +196,7 @@ apis:
     baseURL: https://docs.skymavis.com/
     tags:
       - Wallets
-      - Provider
+      - Providers
       - JavaScript
     tags_raw:
       - Wallet
